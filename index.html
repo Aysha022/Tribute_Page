@@ -4,8 +4,294 @@
   <head>
     <title>Anne Frank</title>
     <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Quintessential&display=swap" rel="stylesheet">
+
+     <style>
+
+       html {
+            scroll-behavior: smooth;
+        } 
+
+        body {
+          background-color: rgb(0, 0, 0);
+        } 
+       
+        #heading {
+            position: absolute;
+            left : 77px;
+            top : 100px;
+            color: rgb(255, 255, 255);
+            font-family: "Quintessential",cursive;
+            font-size: 120px;
+            animation:  fadeIN 3s ease-in-out;
+        }
+
+        #line {
+          position: absolute;
+          top : 450px;
+          left : 55px;
+          font-family: "Quintessential",serif;
+          font-size: 18px;
+          font-weight: bold;
+          color: #ffffff;
+          margin-left: 50px;
+          white-space: nowrap;
+          overflow: hidden;  
+          animation : typewriter 5s steps(50) 1.5s normal both;
+        }
+        
+        img {
+          position: absolute;
+          height : 729px;
+          width : 650px;
+          right : 0px;
+          top : 0px;
+          animation : fadeIN 5s ease-in-out;
+          filter : grayscale(50%); 
+          transition: filter 1s ease-in-out;
+        }
+
+       img:hover {
+         filter: grayscale(0%);
+       }
+
+       #details {
+        position: absolute;
+        top : 1500px;
+       }
+
+       #more {
+         position: absolute;
+         top : 3100px;
+         color: #ffffff;
+       }
+
+       #pic {
+        position: absolute;
+        left : 250px;
+        top : 120px;
+        height : 450px;
+        width : 450px;
+        transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+       }
+
+       #pic:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+      }
+
+      #line1 {
+        color: white;
+        position: absolute;
+        font-family: fantasy;
+        font-size: 40px;
+        left : 330px;
+        top : 630px;
+        white-space: nowrap;
+        overflow: hidden;  
+      }
+
+      #line2 {
+        color: white;
+        position: absolute;
+        font-family: fantasy;
+        font-size: 40px;
+        left : 1000px;
+        top : 630px;
+        white-space: nowrap;
+        overflow: hidden;  
+      }
+
+       #pic1 {
+        position: absolute;
+        left : 900px;
+        top : 120px;
+        height : 450px;
+        width : 450px;
+        transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+       }
+
+       #pic1:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+      }
+
+      #sparkle {
+        position: absolute;
+        left : 120px;
+        top : 340px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+      #book {
+        position: absolute;
+        left : 120px;
+        top : 445px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #wisdom {
+        position: absolute;
+        left : 120px;
+        top : 545px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #hope {
+        position: absolute;
+        left : 120px;
+        top : 645px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #head1 {
+        position : absolute;
+        left : 420px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        color: #ffffff;
+        white-space: nowrap;
+       }
+
+       #head2 {
+        position: absolute;
+        left : 120px;
+        top : 150px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #head3 {
+        position: absolute;
+        left : 120px;
+        top : 300px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #head4 {
+        position: absolute;
+        left : 120px;
+        top : 750px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #head5 {
+        position: absolute;
+        left : 120px;
+        top : 890px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #head6 {
+        position: absolute;
+        left : 120px;
+        top : 1000px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      
+      #head7 {
+        position: absolute;
+        left : 120px;
+        top : 1140px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+
+      #gallery {
+        position: absolute;
+        top : 5900px;
+       }
+
+      #pic2 {
+        position: absolute;
+        left : 140px;
+        top : -700px;
+        height : 300px;
+        width : 300px;
+       }
+
+       #pic3 {
+        position: absolute;
+        left : 570px;
+        top : -700px;
+        height : 300px;
+        width : 300px;
+       }
+
+       #pic4 {
+        position: absolute;
+        left : 1015px;
+        top : -700px;
+        height : 300px;
+        width : 300px;
+       }
+
+       #pic5 {
+        position: absolute;
+        left : 140px;
+        top : -330px;
+        bottom : -50px;
+        height : 300px;
+        width : 300px;
+       }
+
+       #pic6 {
+        position: absolute;
+        left : 570px;
+        top : -330px;
+        bottom : -50px;
+        height : 300px;
+        width : 300px;
+       }
+
+       #pic7 {
+        position: absolute;
+        left : 1015px;
+        top : -330px;
+        bottom : -50px;
+        height : 300px;
+        width : 300px;
+       }
+
+
+         @keyframes fadeIN {
+          from {
+            opacity : 0;
+          }
+          to {
+           opacity : 1;
+          }  
+        } 
+        @keyframes typewriter {
+            from { 
+              width: 0%; 
+            }
+            to {
+              width: 90%; 
+            }
+       } 
+
+     </style>
+
   </head>
-<html>
+
   <body>
     <h1 id="heading"> ANNE FRANK</h1>
     <div id="line">
