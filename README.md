@@ -1,7 +1,7 @@
 # Tribute_Page
 ## Task - 1 : Tribute Page
-This is a simple Tribute page done for the great diarist <b>Anne Frank.</b>
+- This is a simple Tribute page done for the great diarist <b>Anne Frank.</b>
 
-It is done using basic Html and CSS.
+- It is done using basic Html and CSS.
 
-Task 1 for learning web development.
+- Task 1 for learning web development.
